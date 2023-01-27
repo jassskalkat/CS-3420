@@ -1,0 +1,40 @@
+Assignment 2
+HTTP Server Development 
+
+In this assignment, you will learn and practice the basics of socket programming for TCP connections in Python: how to create a socket, bind it to a specific address and port, as well as send and receive a HTTP packet. You will also get familiar with HTTP request/response format.
+
+You will develop a web server that handles one HTTP request at a time. Your web server should accept and parse the HTTP request, get the requested file from the server’s file system, create an HTTP response message which contains the requested file, and then send the response directly to the client. If the requested file is not present in the server, the server should send an HTTP “404 Not Found” message back to the client.
+
+You may expand the TCPServer.py provided in Practice 1 to implement the Web server.  
+
+In TCPServer.py, the request message is any text line, and the response is the same text line but all letters are in upper case. 
+
+In the WebServer, the request message is an HTTP GET request line. In the form of 
+
+GET /filename HTTP/1.1
+
+ 
+
+Please notice that this server only process GET, and does not care about the version, so that the only useful portion is the second portion: /filename
+
+You should use Python code to process the message and obtain the filename. Any Python string process functions can be used, such as split().
+
+After the filename is retrieved from the message, you may want to open this file. Thus, python file processing functions, such as open(), should be used. 
+
+The file may or may not be able to get opened. If it cannot be opened, probably this file does not exist. In this case, an 404 response message should be sent back. We assume no header lines are involved.
+
+Different mechanisms can be used to determine if a file can be opened. One way is to use try...except structure.
+
+If the file is opened, then a 200 response message should be produced and sent back. We assume no header lines are involved.
+
+To send the whole file back, you may need to use a loop to go through every byte of the file. The good thing is that TCP is based on a connection.
+
+Running the Server 
+
+Test files are provided, and they should be put in the same directory that the server is in. Run the server program. This server and the client may be in different hosts. Here we assume the server and the client are in the same host. Please use port 8000 instead of port 80. 
+
+Open a browser, and type in the request:
+
+http://localhost:8000/index.html.
+
+All the test files should be successfully retrieved from the server.

@@ -1,0 +1,11 @@
+Assignment 3
+
+Open the provided file with Wireshark. This file shows the captured network activities in a local area network for about one minute and half. Some of the involved protocols are not covered in this course; learn and understand the basics of these protocols. Based on the data in the file, answer the following questions:
+
+1. List the captured protocols, brief describe these protocols.
+
+2. List the domain names that were accessed through HTTP and their IP addresses.
+
+3. Which domain names were searched through DNS.
+
+4. (optional) List other interesting findings.

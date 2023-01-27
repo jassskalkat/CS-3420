@@ -1,0 +1,27 @@
+Assignment 1
+
+1. Construct a valid HTTP request message (The Host header must be included. The port must be 80 or 443 and it should be indicated), send this message to a server, and record the response message (the response status should be 200). Put the request message to a text file HTTP_request.txt; put the response message to a text file HTTP_response.txt.  
+
+Choose a proper request so that the response will be always the same.
+
+2. Access your own UPEI email account by connecting to imap.gmail.com directly. Record the whole dialog, including connection, login, listing, selecting, fetching, and so on. Your password should be replaced by string "password". User input should be properly coloured. The dialog should be put into a PDF file IMAP_session.PDF.
+
+3. The following DNS request and response were recorded by me.
+
+
+|00|ec|ad|e0|ad|19|c0|38|f9|d3|2f|ef|c4|08|00|45|00|00|3e|7f|9b|00|00|ff|11|f2|0c|c0|a8|64|b4|c0|a8|64|01|f6|e1|00|35|00|2a|45|90|**82|ec|01|00|00|01|00|00|00|00|00|00|03|77|77|77|08|66|61|63|65|62|6f|6f|6b|03|63|6f|6d|00|00|01|00|01|
+
+
+|00|38|f9|d3|2f|ef|c4|ec|ad|e0|ad|19|c0|08|00|45|00|00|6b|00|00|40|00|40|11|f0|7b|c0|a8|64|01|c0|a8|64|b4|00|35|f6|e1|00|57|f3|da|**82|ec|81|80|00|01|00|02|00|00|00|00|03|77|77|77|08|66|61|63|65|62|6f|6f|6b|03|63|6f|6d|00|00|01|00|01|c0|0c|00|05|00|01|00|00|0b|5d|00|11|09|73|74|61|72|2d|6d|69|6e|69|04|63|31|30|72|c0|10|c0|2e|00|01|00|01|00|00|00|1b|00|04|1f|0d|50|24|
+
+I put ** at the starting points of the two DNS messages. Please analyze these data and answer the following questions.
+
+(1) What was the goal of this request?
+
+(2) What was the answer to this request? (For IP address, it must be in decimal format)
+
+(3) If you have found a host that was not in the request, please list the name of the host.  
+
+(4) What was the role of this newly discovered host? What was the role of the host in the request?
+
+Write your answers to a file DNS_answers.PDF.
